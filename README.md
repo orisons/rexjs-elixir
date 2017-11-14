@@ -61,4 +61,4 @@ You can change ``"/rexjs"`` endpoint to other, it's configurable in front-end.
 ```
 ***This function post message with data to all binded websockets with this worker and module***
 
-More info you can find in [documentation](https://hexdocs.pm/rexjs/).
+More info you can find in [documentation](https://hexdocs.pm/rexjs/0.1.0/).
