@@ -1,5 +1,6 @@
 defmodule Orisons.RexJS.Adapter.Cowboy do
-
+    @moduledoc false
+    
     import Logger
 
     alias Orisons.RexJS.Module
@@ -26,21 +27,6 @@ defmodule Orisons.RexJS.Adapter.Cowboy do
 
         {:ok, req, state, @timeout}
     end
-    
-    # Handle other messages from the browser - don't reply
-    # def websocket_handle({:text, message}, req, state) do
-    #     Logger.info("CHECK: #{inspect state}")
-    #     case Poison.decode message do
-    #         {:ok, %{"module" => module, "worker" => worker}} ->
-    #             case Module.get_data(worker, module) do
-    #                 {:error, message} -> 
-    #                     {:reply, {:text, %{"error": message} |> Poison.encode!}, req, state}
-    #                 data -> 
-    #                     {:reply, {:text, data |> Poison.encode!}, req, state}
-    #             end
-    #         _ -> {:reply, {:text, %{"error": "Wrong request send to RexJS Socket"} |> Poison.encode!}, req, state}
-    #     end
-    # end
 
     def websocket_info(:send_data, req, state) do
         case Module.get_data(state.worker, state.module) do

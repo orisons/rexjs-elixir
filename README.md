@@ -1,6 +1,10 @@
 # RexJS - elixir
 
-**RexJS is library for reactivity between elixir data with front-end through javascript websockets.**
+**RexJS is library for reactivity between elixir data and front-end through javascript websockets.**
+
+<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/4eSXzM9Zem3cwXCYU3QciGaZ/orisons/rexjs-elixir'>
+  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/4eSXzM9Zem3cwXCYU3QciGaZ/orisons/rexjs-elixir.svg' />
+</a>
 
 ## Installation
 
@@ -9,13 +13,13 @@ Add `rexjs` to your list of dependencies in `mix.exs`:
 
 ```elixir
 def deps do
-  [{:rexjs, "~> 0.0.1"}]
+  [{:rexjs, "~> 0.1.0"}]
 end
 ```
 
 ### Front-end
-* [JavaScript](https://www.google.com)
-* [VueJS](https://www.google.com)
+* [JavaScript](https://github.com/orisons/rexjs-javascript)
+* [VueJS](https://github.com/orisons/rexjs-vue)
 
 ## Usage
 
@@ -30,6 +34,18 @@ config :rexjsphoenix, YourPhoenixApp.Endpoint,
             {:_, Plug.Adapters.Cowboy.Handler, {YourPhoenixApp.Endpoint, []}}
           ]}]]
 ```
+
+### Cowboy:
+```elixir
+:cowboy_router.compile([
+  { :_,
+    [
+      {"/rexjs", Orisons.RexJS.Adapter.Cowboy, []}
+      {"/someurl", DynamicPageHandler, []},
+    ]
+  }
+])
+```
 You can change ``"/rexjs"`` endpoint to other, it's configurable in front-end.
 
 #### Start worker
@@ -43,4 +59,4 @@ You can change ``"/rexjs"`` endpoint to other, it's configurable in front-end.
 ```
 ***This function post message with data to all binded websockets with this worker and module***
 
-More info you can find in [documentation](https://www.google.com).
+More info you can find in [documentation](https://hexdocs.pm/rexjs/).
