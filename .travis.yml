@@ -8,11 +8,6 @@ otp_release:
   - 19.3
   - 20.0
 
-matrix:
-  exclude:
-    - elixir: 1.3
-      otp_release: 20.0
-
 before_install:
   - sudo apt-get update -qq
 

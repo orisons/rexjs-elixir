@@ -14,7 +14,7 @@ defmodule Orisons.RexJS.Mixfile do
       package: package(),
       deps: deps(),
       source_url: "https://github.com/orisons/rexjs-elixir",
-      docs: [main: "RexJS", # The main page in the docs
+      docs: [main: "Orisons.RexJS.Module", # The main page in the docs
               # logo: "path/to/logo.png",
               extras: ["README.md"]]
     ]
