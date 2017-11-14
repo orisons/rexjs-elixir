@@ -1,5 +1,7 @@
 # RexJS - elixir
 
+<a href="https://travis-ci.org/orisons/rexjs-elixir"><img src="https://travis-ci.org/orisons/rexjs-elixir.svg?branch=master" /></a>
+
 **RexJS is library for reactivity between elixir data and front-end through javascript websockets.**
 
 <a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/4eSXzM9Zem3cwXCYU3QciGaZ/orisons/rexjs-elixir'>
