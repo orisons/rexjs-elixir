@@ -5,7 +5,7 @@ defmodule Orisons.RexJS.Mixfile do
     [
       app: :rexjs,
       version: "0.1.0",
-      elixir: "~> 1.3",
+      elixir: "~> 1.4",
       start_permanent: Mix.env == :prod,
       dialyzer: [plt_add_deps: :apps_direct],
 
