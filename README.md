@@ -4,9 +4,7 @@
 
 **RexJS is library for reactivity between elixir data and front-end through javascript websockets.**
 
-<a target='_blank' rel='nofollow' href='https://app.codesponsor.io/link/4eSXzM9Zem3cwXCYU3QciGaZ/orisons/rexjs-elixir'>
-  <img alt='Sponsor' width='888' height='68' src='https://app.codesponsor.io/embed/4eSXzM9Zem3cwXCYU3QciGaZ/orisons/rexjs-elixir.svg' />
-</a>
+
 
 ## Installation
 
