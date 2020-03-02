@@ -1,3 +1,6 @@
+## DEPRECATED
+This library is deprecated, please use [storex](https://github.com/nerdslabs/storex) instead.
+
 # RexJS - elixir
 
 [![Inline docs](http://inch-ci.org/github/orisons/rexjs-elixir.svg)](http://inch-ci.org/github/orisons/rexjs-elixir) [![Travis](https://travis-ci.org/orisons/rexjs-elixir.svg?branch=master)](https://travis-ci.org/orisons/rexjs-elixir)
